@@ -44,6 +44,6 @@
     state: "{{ k8s_state }}"
     validate_certs: False
     definition: "{{ lookup('template', item) }}"
-  no_log: true
+  no_log: false
   with_items: "{{ k8s_resources }}"
 
